@@ -3,6 +3,7 @@
 
 module.exports = function towelSort (matrix) {
   var New_array = [];
+  if (matrix==undefined) {return New_array}
   for (var i = 0; i < matrix.length; i++) {
     if (i%2!=0) {
       for (var j = matrix[i].length-1; j >= 0; j--) {
